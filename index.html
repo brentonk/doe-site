@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Dispute Outcome Expectations</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+                    <i class="fa fa-play-circle"></i> DOE <span class="light">Scores</span>
                 </a>
             </div>
 
@@ -59,6 +59,9 @@
                         <a class="page-scroll" href="#download">Download</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#paper">Paper</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -74,8 +77,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Grayscale</h1>
-                        <p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created by Start Bootstrap.</p>
+                        <h1 class="brand-heading">DOE Scores</h1>
+                        <p class="intro-text">Dispute Outcome Expectations: measuring how raw capabilities shape military power.</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -89,10 +92,10 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+                <h2>About DOE Scores</h2>
+                <p>The Dispute Outcome Expectations score is a probabilistic measure of how a hypothetical militarized dispute between two states would end, taking into account each side's raw <a href="http://cow.dss.ucdavis.edu/data-sets/national-material-capabilities">military capabilities</a>.</p>
+                <p>The DOE scores are the output of an <a href="https://en.wikipedia.org/wiki/Ensemble_learning">ensemble</a> of machine learning models.  We fit the models on the <a href="http://cow.dss.ucdavis.edu/data-sets/MIDs">Militarized Interstate Disputes</a> data and then use them to calculate predicted probabilities for every dyad&ndash;year from 1816 to 2007.</p>
+                <p>If you use the DOE scores, please cite the associated <a href="#paper" class="page-scroll">working paper</a>.</p>
             </div>
         </div>
     </section>
@@ -102,10 +105,21 @@
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                  <h2>Download</h2>
+                  <p>DOE scores are available for download from <a href="">Dataverse</a>.  The current version of the dataset is <strong>X.X</strong>.</p>
+                  <p>The scores come in two flavors: <em>directed</em> and <em>undirected</em>.  The directed scores give the probability of the initiator winning, the target winning, or a stalemate.  The undirected scores give the probability of each state winning (or a stalemate), assuming a 50-50 chance of either side being the initator.</p>
+                  <p>The code used to create the DOE scores is available on <a href="https://github.com/brentonk/crpn">GitHub</a>.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paper Section -->
+    <section id="paper" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <h2>Working Paper</h2>
+              <p>For a full description of the methods and data used to create the DOE scores, see our working paper <a href="crpn.pdf">"Capability Ratios Predict Nothing"</a>.</p>
             </div>
         </div>
     </section>
@@ -114,32 +128,26 @@
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                <h2>Contact Us</h2>
+                <p>The Dispute Outcome Expectations project was created by <a href="http://www.robertjcarroll.com">Rob Carroll</a> and <a href="http://www.bkenkel.com">Brenton Kenkel</a>.</p>
+                <p><a href="mailto:RobCarrollFSU@gmail.com">RobCarrollFSU@gmail.com</a> <br> <a href="mailto:brenton.kenkel@vanderbilt.edu">brenton.kenkel@vanderbilt.edu</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        <a href="https://github.com/brentonk/crpn" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">GitHub</span></a>
                     </li>
                     <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                        <a href="http://dataverse.harvard.edu" class="btn btn-default btn-lg"><i class="fa fa-globe fa-fw"></i> <span class="network-name">Dataverse</span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Map Section -->
-    <div id="map"></div>
-
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2014</p>
+            <p class="text-muted"><small>Copyright &copy; Rob Carroll and Brenton Kenkel 2015</small></p>
         </div>
     </footer>
 

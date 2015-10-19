@@ -1,0 +1,6 @@
+# Locally served version
+/_site
+
+# Directory junk
+.dropbox
+.DS_Store
